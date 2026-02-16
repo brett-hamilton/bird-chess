@@ -1,0 +1,50 @@
+:root {
+  /* Nature palette */
+  --color-bg: #f5f0e8;
+  --color-panel: #faf7f0;
+  --color-panel-highlight: #f0ead0;
+  --color-text: #2a3a20;
+  --color-text-muted: #6a7a5a;
+  --color-border: #8a9a70;
+  --color-label: #6a7a5a;
+
+  /* Board colors */
+  --color-square-light: #e8dcc0;
+  --color-square-dark: #7a9a58;
+
+  /* Interaction */
+  --color-selected: #c8d84080;
+  --color-legal-dot: rgba(40, 80, 30, 0.35);
+  --color-last-move-from: #c8d84040;
+  --color-last-move-to: #c8d84060;
+
+  /* Accent */
+  --color-accent: #4a8a40;
+  --color-accent-hover: #3a7a30;
+
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+#root {
+  width: 100%;
+}

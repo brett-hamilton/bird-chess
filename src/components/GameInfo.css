@@ -1,0 +1,124 @@
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--color-panel);
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  min-width: 220px;
+}
+
+.game-info__status {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: var(--color-panel-highlight);
+}
+
+.game-info__status--gameover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.game-info__turn-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.game-info__turn-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+}
+
+.game-info__turn-indicator--white .game-info__turn-dot {
+  background: #f0ead0;
+}
+
+.game-info__turn-indicator--black .game-info__turn-dot {
+  background: #2a2a2a;
+}
+
+.game-info__captured {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.game-info__captured-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.game-info__captured-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.game-info__captured-pieces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.game-info__captured-img {
+  width: 24px;
+  height: 24px;
+  image-rendering: pixelated;
+}
+
+.game-info__new-game {
+  padding: 0.6rem 1rem;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.game-info__new-game:hover {
+  background: var(--color-accent-hover);
+}
+
+.game-info__legend {
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+}
+
+.game-info__legend-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.game-info__legend-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+}
+
+.game-info__legend-img {
+  width: 24px;
+  height: 24px;
+  image-rendering: pixelated;
+}
+
+.game-info__legend-name {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}

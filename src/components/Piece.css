@@ -1,0 +1,7 @@
+.piece {
+  width: 80%;
+  height: 80%;
+  image-rendering: pixelated;
+  pointer-events: none;
+  user-select: none;
+}

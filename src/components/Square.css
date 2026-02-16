@@ -1,0 +1,56 @@
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.square--light {
+  background-color: var(--color-square-light);
+}
+
+.square--dark {
+  background-color: var(--color-square-dark);
+}
+
+.square--selected {
+  background-color: var(--color-selected) !important;
+}
+
+.square--legal {
+  cursor: pointer;
+}
+
+.square--last-from {
+  background-color: var(--color-last-move-from) !important;
+}
+
+.square--last-to {
+  background-color: var(--color-last-move-to) !important;
+}
+
+.square--selected.square--last-from,
+.square--selected.square--last-to {
+  background-color: var(--color-selected) !important;
+}
+
+.square__dot {
+  position: absolute;
+  width: 28%;
+  height: 28%;
+  border-radius: 50%;
+  background-color: var(--color-legal-dot);
+  pointer-events: none;
+}
+
+.square__ring {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 3px solid var(--color-legal-dot);
+  pointer-events: none;
+  box-sizing: border-box;
+}
